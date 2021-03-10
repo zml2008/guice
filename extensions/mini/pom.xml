@@ -4,14 +4,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.google.inject.extensions</groupId>
+    <groupId>ca.stellardrift.guice-backport.extensions</groupId>
     <artifactId>extensions-parent</artifactId>
     <version>4.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>guice-mini</artifactId>
 
-  <name>Google Guice - Extensions - Mini</name>
+  <name>Stellardrift Guice-fork - Extensions - Mini</name>
 
   <build>
     <plugins>

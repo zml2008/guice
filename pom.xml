@@ -25,20 +25,21 @@ See the Apache License Version 2.0 for the specific language governing permissio
 
   <packaging>pom</packaging>
 
-  <groupId>com.google.inject</groupId>
+  <groupId>ca.stellardrift.guice-backport</groupId>
   <artifactId>guice-parent</artifactId>
-  <version>5.0.1</version>
+  <version>5.0.1-SNAPSHOT</version>
 
-  <name>Google Guice</name>
+  <name>Stellardrift Guice-fork</name>
 
   <description>
-    Guice is a lightweight dependency injection framework for Java 6 and above
+    A fork of Guice that restores removed API, and uses external ASM.
   </description>
 
-  <url>https://github.com/google/guice</url>
+  <url>https://github.com/zml2008/guice/</url>
+  <!--<url>https://github.com/google/guice</url>-->
   <inceptionYear>2006</inceptionYear>
 
-  <organization>
+  <!--<organization>
     <name>Google, Inc.</name>
     <url>http://www.google.com</url>
   </organization>
@@ -58,23 +59,23 @@ See the Apache License Version 2.0 for the specific language governing permissio
       <unsubscribe>http://groups.google.com/group/google-guice-dev/subscribe</unsubscribe>
       <post>http://groups.google.com/group/google-guice-dev/post</post>
     </mailingList>
-  </mailingLists>
+  </mailingLists>-->
 
   <scm>
-    <connection>scm:git:git://github.com/google/guice.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/google/guice.git</developerConnection>
-    <url>https://github.com/google/guice</url>
+    <connection>scm:git:git://github.com/zml2008/guice.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/zml2008/guice.git</developerConnection>
+    <url>https://github.com/zml2008/guice</url>
   </scm>
 
   <issueManagement>
     <system>Github</system>
-    <url>https://github.com/google/guice/issues/</url>
+    <url>https://github.com/zml2008/guice/issues/</url>
   </issueManagement>
 
-  <ciManagement>
+  <!--<ciManagement>
     <system>Travis</system>
     <url>https://travis-ci.org/google/guice</url>
-  </ciManagement>
+  </ciManagement>-->
 
   <licenses>
     <license>
@@ -87,11 +88,11 @@ See the Apache License Version 2.0 for the specific language governing permissio
   <distributionManagement>
     <!-- override the parent's directory to point to the canonical place, and use https. -->
     <repository>
-      <id>google-releases</id>
+      <id>ossrh</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
     <snapshotRepository>
-      <id>google-snapshots</id>
+      <id>ossrh</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
@@ -498,7 +499,7 @@ See the Apache License Version 2.0 for the specific language governing permissio
       -->
       <plugin>
         <artifactId>maven-gpg-plugin</artifactId>
-        <version>1.4</version>
+        <version>1.6</version> <!-- backport: bump to 1.6 for using agent -->
         <executions>
           <execution>
             <id>sign-artifacts</id>

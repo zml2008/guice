@@ -4,14 +4,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.google.inject.extensions</groupId>
+    <groupId>ca.stellardrift.guice-backport.extensions</groupId>
     <artifactId>extensions-parent</artifactId>
-    <version>5.0.1</version>
+    <version>5.0.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>guice-testlib</artifactId>
 
-  <name>Google Guice - Extensions - TestLib</name>
+  <name>Stellardrift Guice-fork - Extensions - TestLib</name>
 
   <build>
     <plugins>
@@ -38,7 +38,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.google.inject.extensions</groupId>
+      <groupId>ca.stellardrift.guice-backport.extensions</groupId>
       <artifactId>guice-throwingproviders</artifactId>
       <version>${project.version}</version>
     </dependency>

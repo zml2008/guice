@@ -1,7 +1,24 @@
 Guice
 ====
 
+# This fork
 
+This is a fork of Google Guice designed to:
+
+- Backport Guice 5.0.1 onto Guava 21
+- Restore the removed ProvisionListener.getDependencyChain() API
+- Switch to using an external ASM, rather than shaded ASM
+
+Published on maven central,
+
+```xml
+<dependency>
+    <groupId>ca.stellardrift.guice-backport</groupId>
+    <artifactId>guice</artifactId>
+    <version>5.0.1-SNAPSHOT</version>
+</dependency>
+
+```
 
 **Latest release: [5.0.0-BETA-1](https://github.com/google/guice/wiki/Guice500)**
 

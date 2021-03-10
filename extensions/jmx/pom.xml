@@ -4,14 +4,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.google.inject.extensions</groupId>
+    <groupId>ca.stellardrift.guice-backport.extensions</groupId>
     <artifactId>extensions-parent</artifactId>
-    <version>5.0.1</version>
+    <version>5.0.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>guice-jmx</artifactId>
 
-  <name>Google Guice - Extensions - JMX</name>
+  <name>Stellardrift Guice-fork - Extensions - JMX</name>
 
   <build>
     <plugins>

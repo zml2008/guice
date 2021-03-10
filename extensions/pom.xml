@@ -4,17 +4,17 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.google.inject</groupId>
+    <groupId>ca.stellardrift.guice-backport</groupId>
     <artifactId>guice-parent</artifactId>
-    <version>5.0.1</version>
+    <version>5.0.1-SNAPSHOT</version>
   </parent>
 
   <packaging>pom</packaging>
 
-  <groupId>com.google.inject.extensions</groupId>
+  <groupId>ca.stellardrift.guice-backport.extensions</groupId>
   <artifactId>extensions-parent</artifactId>
 
-  <name>Google Guice - Extensions</name>
+  <name>Stellardrift Guice-fork - Extensions</name>
 
   <modules>
     <module>assistedinject</module>
@@ -41,7 +41,7 @@
      | All extensions depend on the core
     -->
     <dependency>
-      <groupId>com.google.inject</groupId>
+      <groupId>ca.stellardrift.guice-backport</groupId>
       <artifactId>guice</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -49,7 +49,7 @@
      | Some extension tests depend on the core tests
     -->
     <dependency>
-      <groupId>com.google.inject</groupId>
+      <groupId>ca.stellardrift.guice-backport</groupId>
       <artifactId>guice</artifactId>
       <version>${project.version}</version>
       <classifier>tests</classifier>

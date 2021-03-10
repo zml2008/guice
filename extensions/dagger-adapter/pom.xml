@@ -3,12 +3,12 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.google.inject.extensions</groupId>
+    <groupId>ca.stellardrift.guice-backport.extensions</groupId>
     <artifactId>extensions-parent</artifactId>
-    <version>5.0.1</version>
+    <version>5.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>guice-dagger-adapter</artifactId>
-  <name>Google Guice - Extensions - Dagger Adapter</name>
+  <name>Stellardrift Guice-fork - Extensions - Dagger Adapter</name>
   <dependencies>
     <dependency>
       <groupId>com.google.dagger</groupId>

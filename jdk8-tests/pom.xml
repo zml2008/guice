@@ -18,24 +18,24 @@ See the Apache License Version 2.0 for the specific language governing permissio
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>guice-parent</artifactId>
-    <groupId>com.google.inject</groupId>
-    <version>5.0.1</version>
+    <groupId>ca.stellardrift.guice-backport</groupId>
+    <version>5.0.1-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>jdk8-tests</artifactId>
 
-  <name>Google Guice - JDK8 Tests</name>
+  <name>Stellardrift Guice-fork - JDK8 Tests</name>
 
   <dependencies>
     <dependency>
-      <groupId>com.google.inject</groupId>
+      <groupId>ca.stellardrift.guice-backport</groupId>
       <artifactId>guice</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.google.inject.extensions</groupId>
+      <groupId>ca.stellardrift.guice-backport.extensions</groupId>
       <artifactId>guice-assistedinject</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
