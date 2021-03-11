@@ -45,6 +45,13 @@
     <dependency>
       <groupId>com.google.truth</groupId>
       <artifactId>truth</artifactId>
+      <version>0.45</version> <!-- backport: this needs newer Guava -->
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>25.1-jre</version> <!-- backport: this needs newer Guava -->
       <scope>compile</scope>
     </dependency>
     <dependency>

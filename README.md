@@ -1,4 +1,4 @@
-Guice
+Stellardrift Guice-fork
 ====
 
 # This fork
@@ -19,6 +19,13 @@ Published on maven central,
 </dependency>
 
 ```
+
+This fork is not set up to readily accept contributions of its own as branches may be rebased at will to maintain a 
+clean set of commits against upstream. Ideally, any desired contributions are submitted upstream and may be incorporated 
+after the relevant release. If that is not possible, open an issue and we can discuss the most suitable way forward.
+
+# Original readme below:
+
 
 **Latest release: [5.0.0-BETA-1](https://github.com/google/guice/wiki/Guice500)**
 
