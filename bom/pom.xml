@@ -22,12 +22,12 @@
         <artifactId>guice</artifactId>
         <version>${project.version}</version>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>ca.stellardrift.guice-backport</groupId>
         <artifactId>guice</artifactId>
         <version>${project.version}</version>
         <classifier>classes</classifier>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>ca.stellardrift.guice-backport.extensions</groupId>
         <artifactId>guice-assistedinject</artifactId>

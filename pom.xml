@@ -117,7 +117,7 @@ See the Apache License Version 2.0 for the specific language governing permissio
     <!--
      | Use "-Dguice.with.jarjar=false" to build without jarjar
     -->
-    <guice.with.jarjar>true</guice.with.jarjar>
+    <guice.with.jarjar>false</guice.with.jarjar>
     <!--
      | The last stable release version id, used for generating API diffs between released versions
     -->

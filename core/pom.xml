@@ -37,7 +37,7 @@
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
-      <optional>true</optional>
+      <!--<optional>true</optional>--> <!-- Sponge: we don't jarjar -->
     </dependency>
     <!--
      | Test dependencies
@@ -185,12 +185,12 @@
        | JarJar build profile: Embed ASM classes under a Guice namespace
       -->
       <id>guice.with.jarjar</id>
-      <activation>
+      <!--<activation>
         <property>
           <name>guice.with.jarjar</name>
           <value>!false</value>
         </property>
-      </activation>
+      </activation>-->
       <build>
         <plugins>
           <plugin>
