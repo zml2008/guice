@@ -86,6 +86,7 @@ final class MembersInjectorImpl<T> implements MembersInjector<T> {
       return;
     }
     final InternalContext context = injector.enterContext();
+    context.pushState(key, source);
     try {
       if (provisionCallback != null && provisionCallback.hasListeners()) {
         provisionCallback.provision(
@@ -101,6 +102,7 @@ final class MembersInjectorImpl<T> implements MembersInjector<T> {
         injectMembers(instance, context, toolableOnly);
       }
     } finally {
+      context.popState();
       context.close();
     }
 
