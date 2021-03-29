@@ -15,7 +15,7 @@ Published on maven central,
 <dependency>
     <groupId>ca.stellardrift.guice-backport</groupId>
     <artifactId>guice</artifactId>
-    <version>5.0.1-SNAPSHOT</version>
+    <version>5.0.1</version>
 </dependency>
 
 ```
